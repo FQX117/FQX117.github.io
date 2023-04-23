@@ -78,7 +78,7 @@
       // --SPRITES--
 
       // linkedin
-      const linkedinMap = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/FQX117/FQX117.github.io/main/Images/Linkedin' );
+      const linkedinMap = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/FQX117/FQX117.github.io/main/Images/Linkedin-PNG-Pic.png' );
       const linkedinMaterial = new THREE.SpriteMaterial(  {map: linkedinMap} );
       const linkedSprite = new THREE.Sprite( linkedinMaterial );
       linkedSprite.scale.set(.1, .1, .1);
@@ -150,28 +150,8 @@
       }
 
     function render(){
-      moveJelly();
       // update the picking ray with the camera and pointer position
       renderer.render(scene, camera);
-    }
-
-    function moveJelly(){
-      if (jellyFish !== undefined)
-      {
-        jellyFish.position.y += .0005;
-      }
-      if (jellyFish1 !== undefined)
-      {
-        jellyFish1.position.y += .005;
-      }
-      if (jellyFish2 !== undefined)
-      {
-        jellyFish2.position.y += .005;
-      }
-      if (jellyFish3 !== undefined)
-      {
-        jellyFish3.position.y += .005;
-      }
     }
 // <!-- Starting an immersive WebXR session requires user interaction. We start this one with a simple button. -->
 // <!-- <input type = "button" onclick = "activateXR()" value = "Activate Business Card" id="start-ar"> -->
