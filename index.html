@@ -81,7 +81,7 @@
       const linkedinMap = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/FQX117/FQX117.github.io/main/Images/Linkedin-PNG-Pic.png' );
       const linkedinMaterial = new THREE.SpriteMaterial(  {map: linkedinMap} );
       const linkedSprite = new THREE.Sprite( linkedinMaterial );
-      linkedSprite.scale.set(.1, .1, .1);
+      linkedSprite.scale.set(.2, .2, .2);
       linkedSprite.position.set(0.20, -3, -2);
       linkedSprite.userData.canLink = true;
       linkedSprite.userData.name = "linkedin";
@@ -113,7 +113,7 @@
           canLink = found[0].object;
           if (canLink.userData.name == 'linkedin')
           {
-            //window.open("https://www.linkedin.com/in/joseph-holeman/");
+            window.open("https://www.linkedin.com/in/joseph-holeman/");
           }
           if (canLink.userData.name == 'github')
           {
