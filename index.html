@@ -113,7 +113,7 @@
           canLink = found[0].object;
           if (canLink.userData.name == 'linkedin')
           {
-            window.open("https://www.linkedin.com/in/joseph-holeman/");
+            //window.open("https://www.linkedin.com/in/joseph-holeman/");
           }
           if (canLink.userData.name == 'github')
           {
@@ -149,30 +149,7 @@
       // stats.update();
       }
 
-    function render(){
-      moveJelly();
-      // update the picking ray with the camera and pointer position
-      renderer.render(scene, camera);
-    }
-
-    function moveJelly(){
-      if (jellyFish !== undefined)
-      {
-        jellyFish.position.y += .0005;
-      }
-      if (jellyFish1 !== undefined)
-      {
-        jellyFish1.position.y += .005;
-      }
-      if (jellyFish2 !== undefined)
-      {
-        jellyFish2.position.y += .005;
-      }
-      if (jellyFish3 !== undefined)
-      {
-        jellyFish3.position.y += .005;
-      }
-    }
+    
 // <!-- Starting an immersive WebXR session requires user interaction. We start this one with a simple button. -->
 // <!-- <input type = "button" onclick = "activateXR()" value = "Activate Business Card" id="start-ar"> -->
   </script>
